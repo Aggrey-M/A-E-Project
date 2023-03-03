@@ -23,7 +23,9 @@
     <nav id="navbar" a href="https://github.com/Aggrey-M/A-E-Project"></a>
       <p><a id ="profile-link" href="https://github.com/Aggrey-M/A-E-Project" target="_blank"> Github Account </a>
     </p>
-      
+      <ul class="nav">
+        <li><a href="https://github.com/Meah254/Fast-thinking.git">Fast thinking</a></li>
+      </ul>
       <p> <a href="#a">A-E-Project</a></p>
     </nav>
        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -58,7 +60,15 @@
 {
     height: 100%;
 }
-
+.nav::after  {
+  content: "";
+  clear: both;
+  display: block;
+}
+.nav li {
+  float: none;
+  list-style-type: none;
+}
 @media only screen and (max-width: 600px) {
 body {
     font: size 10px;
